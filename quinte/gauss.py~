@@ -16,7 +16,7 @@ def gauss(A,b):
                 lam = A[i,k]/A[k,k]
                 A[i,k+1:n] = A[i,k+1:n]-lam*A[k,k+1:n]
                 b[i] = b[i]-lam*b[k]
-    # sostituzione dot() e' il prodotto scalare  
+    # sostituzione    
     for k in range(n-1,-1,-1):
         x[k]=(b[k]-dot(A[k,k+1:n],x[k+1:n]))/A[k,k]
     return x
