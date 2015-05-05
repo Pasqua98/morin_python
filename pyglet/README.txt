@@ -5,6 +5,10 @@ Tutti i file sono stati riadattati da A.Morettin,
 
 == STARTING OPENGL ====
 
+Per un'introduione
+
+https://open.gl/introduction
+
 per OPENGL si è fatto riferimento ai materiali presenti in
 
 https://greendalecs.wordpress.com/2012/04/21/3d-programming-in-python-part-1/

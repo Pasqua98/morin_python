@@ -19,7 +19,7 @@ def do_login():
     if check_login(username, password):
         return "<p>Your login information was correct.</p>"
     else:
-        return "<p style= \"color: #f00\">Login failed.</p>"
+        return "<p style=\"color: #f00\">Login failed.</p>"
 
 def check_login(usr,pwd):
     return usr == "andrea" and pwd == "morettin"

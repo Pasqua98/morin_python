@@ -4,7 +4,7 @@ import random
 from math import cos, sin, pi
 
 
-window = pyglet.window.Window(600,600)
+window = pyglet.window.Window(600, 600, caption="boing boing")
 cursor = window.get_system_mouse_cursor(window.CURSOR_HAND)
 window.set_mouse_cursor(cursor)
 
@@ -27,7 +27,7 @@ def update(dt):
     sprite.y += sprite.dy * dt
     
         
-pyglet.clock.schedule_interval(update, 1/50.0) # update at 50Hz
+pyglet.clock.schedule_interval(update, 1/60.0) # update at 60Hz
 
 @window.event
 def on_mouse_press(x, y, button, modifiers):

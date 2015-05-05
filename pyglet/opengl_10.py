@@ -2,6 +2,9 @@ from pyglet.gl import *
 import pyglet.graphics
 
 window = pyglet.window.Window()
+# colora la finestra
+glClearColor(0.05, 0.05, 0.2, 1)
+
 vl_triangle = pyglet.graphics.vertex_list(3,
     ('v2i', (200, 200, 300, 300, 300, 200)),
     ('c3B', (255, 0, 0, 0, 255, 0, 0, 0, 255))
@@ -13,7 +16,7 @@ def update(dt):
     x += 1
 
 
-pyglet.clock.schedule_interval(update, 1)
+pyglet.clock.schedule_interval(update, 0.5)
 
 @window.event
 def on_draw():
